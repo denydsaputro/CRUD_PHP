@@ -4,7 +4,7 @@
 	$pass = '';
 	$db = 'db_kepegawaian';
 	
-	$conn = mysqli_connect($host, $user, $pass, $db);
+	$GLOBALS['conn'] = mysqli_connect($host, $user, $pass, $db);
 	
 	mysqli_select_db($conn, $db);
 ?>
